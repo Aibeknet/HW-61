@@ -51,7 +51,7 @@ const CountryInfo: React.FC<CountryInfoProps> = ({ countryCode }) => {
     <div className="card">
       <div className="card-body">
         <div style={{ display: 'flex', alignItems: 'center' }}>
-          <h2 className="#" style={{ margin: 0 }}>{country.name}</h2>
+          <h2 className="card-title" style={{ margin: 0 }}>{country.name}</h2>
           <img
             src={country.flag}
             alt={`${country.name} flag`}
@@ -78,4 +78,3 @@ const CountryInfo: React.FC<CountryInfoProps> = ({ countryCode }) => {
 };
 
 export default CountryInfo;
-//card-title

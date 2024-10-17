@@ -13,7 +13,7 @@ const CountryList: React.FC<CountryListProps> = ({ countries, onCountrySelect })
         {countries.map((country) => (
           <li
             key={country.alpha3Code}
-            className="#"
+            className="list-group-item d-flex justify-content-between align-items-center"
             onClick={() => onCountrySelect(country.alpha3Code)}
             style={{ cursor: 'pointer' }}
           >
@@ -31,5 +31,3 @@ const CountryList: React.FC<CountryListProps> = ({ countries, onCountrySelect })
 };
 
 export default CountryList;
-
-//#list-group-item d-flex justify-content-between align-items-center
